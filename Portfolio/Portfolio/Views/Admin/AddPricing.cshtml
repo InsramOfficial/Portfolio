@@ -1,0 +1,67 @@
+﻿@using Portfolio.ViewModel;
+@model PricingVM
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h4>Add your Pricing</h4>
+            <form method="post" asp-action="AddPricing" enctype="multipart/form-data" asp-controller="Admin">
+                <div class="form-group">
+                    <label class="form-label" asp-for="Name"></label>
+                    <input class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <input asp-for="id" hidden class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="f1"></label>
+                    <input class="form-control" asp-for="f1">
+                    <span asp-validation-for="f1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="f2"></label>
+                    <input class="form-control" asp-for="f2">
+                    <span asp-validation-for="f2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="f3"></label>
+                    <input class="form-control" asp-for="f3">
+                    <span asp-validation-for="f3" class="text-danger"></span>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label" asp-for="f4"></label>
+                    <input class="form-control" asp-for="f4">
+                    <span asp-validation-for="f4" class="text-danger"></span>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label" asp-for="f5"></label>
+                    <input class="form-control" asp-for="f5">
+                    <span asp-validation-for="f5" class="text-danger"></span>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label" asp-for="f6"></label>
+                    <input class="form-control" asp-for="f6">
+                    <span asp-validation-for="f6" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Packegeprice"></label>
+                    <input class="form-control" asp-for="Packegeprice">
+                    <span asp-validation-for="Packegeprice" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="Image"></label>
+                    <input class="form-control" asp-for="Image">
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Pricing</button>
+            </form>
+
+        </div>
+        <div class="col-md-4"></div>
+
+
+    </div>
+
+
+
+</div>

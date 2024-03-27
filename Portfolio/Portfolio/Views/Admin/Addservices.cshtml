@@ -1,0 +1,37 @@
+﻿@using Portfolio.ViewModel;
+@model ServicesVM
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h4>Add Your Services</h4>
+            <form method="post" asp-action="Addservices" enctype="multipart/form-data" asp-controller="Admin">
+                <div class="form-group">
+                    <label class="form-label" asp-for="Service_Name"></label>
+                    <input class="form-control" asp-for="Service_Name">
+                    <span asp-validation-for="Service_Name" class="text-danger"></span>
+                    <input asp-for="id" hidden class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Service_Description"></label>
+                    <input class="form-control" asp-for="Service_Description">
+                    <span asp-validation-for="Service_Description" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" asp-for="Image"></label>
+                    <input class="form-control" asp-for="Image">
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Services</button>
+            </form>
+
+        </div>
+        <div class="col-md-4"></div>
+
+
+    </div>
+
+
+
+</div>
